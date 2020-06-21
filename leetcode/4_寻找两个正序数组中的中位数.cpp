@@ -49,11 +49,11 @@ public:
 		}
 		if (nums3.size()<posi + 1) {
 			if (i<nums1.size()) {
-				while (i<nums1.size())
+				while (i<nums1.size()&&nums3.size()<posi+1)
 					nums3.push_back(nums1[i++]);
 			}
 			else {
-				while (j<nums2.size())
+				while (j<nums2.size()&&nums3.size()<posi+1)
 					nums3.push_back(nums2[j++]);
 			}
 		}
